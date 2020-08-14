@@ -54,11 +54,11 @@ const checkPlaying = song => {
     if (song.paused) {
         song.play();
         video.play();
-        play.src = './svg/pause-button.svg';
+        play.src = 'https://meditationapplication.s3.us-east-2.amazonaws.com/pause-button.svg';
     } else {
         song.pause();
         video.pause();
-        play.src = './svg/play-store.svg';
+        play.src = 'https://meditationapplication.s3.us-east-2.amazonaws.com/play-store.svg';
     }
 };
 
@@ -81,7 +81,7 @@ timeDisplay.textContent = `${minutes}:${seconds}`;
 if(currentTime >= fakeDuration){
     song.pause();
     song.currentTime = 0;
-    play.src = "./svg/play-store.svg";
+    play.src = "https://meditationapplication.s3.us-east-2.amazonaws.com/play-store.svg";
     video.pause();
 }
     
