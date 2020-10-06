@@ -85,3 +85,27 @@ video {
 .sound-picker button:nth-child(3) {
     background: wheat;
 }
+
+@media (max-width: 768px) {
+    body {
+        background-color: rgb(226, 222, 215);
+    }
+	.app {
+        margin-top: 10px;
+        padding-top: 10px;
+		height: 30vh;
+    }
+    .sound-picker button, .time-select button {
+        width: 80%;
+        height: 35%;
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .sound-picker button {
+        width: 70px;
+    }
+
+    .time-display {
+        font-size: 20px;
+    }
+}
